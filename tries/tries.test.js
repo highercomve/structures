@@ -86,6 +86,11 @@ test("Tri try and return posible options", () => {
   t.add("sam")
   t.add("soto")
   t.add("satira")
+  t.add("pomali")
+  t.add("poment")
 
   expect(t.try("s")).toEqual(["ser", "sergio", "sam", "satira", "soto"])
+  expect(t.try("ser")).toEqual(["ser", "sergio"])
+  expect(t.try("sa")).toEqual(["sam", "satira"])
+  expect(t.try("pom")).toEqual(["pomali", "poment"])
 })

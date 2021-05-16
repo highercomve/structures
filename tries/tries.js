@@ -40,7 +40,7 @@ Node.prototype.try = function (str = "") {
 
   let parent = this.getNode(str.charAt(0))
   for (let i = 1; i < str.length; i++) {
-    child = getNode(str.charAt(i))
+    child = parent.getNode(str.charAt(i))
     if (!child) {
       break;
     }
