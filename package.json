@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/highercomve/structures/issues"
   },
-  "homepage": "https://github.com/highercomve/structures#readme"
+  "homepage": "https://github.com/highercomve/structures#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.23",
+    "jest": "^26.6.3"
+  },
+  "dependencies": {}
 }
